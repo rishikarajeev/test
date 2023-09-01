@@ -1,0 +1,15 @@
+.color-white{
+color: white;
+}
+.logo{
+ height: 35px;width: 80px; margin: auto;
+}
+.fsize{
+    font-size: 12px;
+}
+.items-img {
+    width: 10vw;
+    height: 10vw;
+    object-fit: contain;
+   
+  }

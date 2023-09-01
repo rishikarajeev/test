@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="ecommerce.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Font Awesome -->
+      <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+      />
+
+      <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+      rel="stylesheet"
+      />
+  </head>
+<body>
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+        <div class="container-fluid">
+          <image src="images/download.png" class="logo float-start" style="margin: 0px;padding: 0px;object-fit: cover;">
+        <div class="row g-0 text-center"> 
+          <i class="fas location-dot text-white"></i>  
+          <span class="text-white fsize">Deliver to Qatar</span>
+        </div> 
+
+    
+          <form class="d-flex">
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle text-wrap text-sm-start g-0 p-2" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                All
+              </a>
+            
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+            <input class="g-0 p-0" type="search" placeholder="Search" aria-label="Search">
+          
+          </form>
+
+          <div  id="DropLanguage">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle color-whit text-sm-start m-1 " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  EN
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item color-whit" href="#">Arabic</a></li>
+                  <li><a class="dropdown-item color-whit" href="#">English</a></li>
+                
+                </ul>
+              </li>
+             
+            </ul>
+           
+          </div>
+          <div  id="Signin">
+            <ul class="navbar-nav  ">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle color-whit " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Sign In
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item color-whit" href="#">Action</a></li>
+                  <li><a class="dropdown-item color-whit" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider color-whit"></li>
+                  <li><a class="dropdown-item color-whit" href="#">Something else here</a></li>
+                </ul>
+              </li>
+             
+            </ul>
+           
+          </div>
+          <div class="text-sm-start w-auto m-auto text-white">Returns & Orders</div>
+          <div>
+            <i class="fas cart-shopping text-white"></i>  
+          <div  class="text-sm-end w-auto m-auto text-white">Cart</div>
+        </div>
+          
+        </div>
+      </nav>
+      <!-- Tabs navs -->
+      <ul class="nav nav-tabs mb-3" id="myTab0" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="home-tab0"
+            data-mdb-toggle="tab"
+            data-mdb-target="#home0"
+            type="button"
+            role="tab"
+            aria-controls="home"
+            aria-selected="true"
+          >
+            ALL
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="profile-tab0"
+            data-mdb-toggle="tab"
+            data-mdb-target="#profile0"
+            type="button"
+            role="tab"
+            aria-controls="profile"
+            aria-selected="false"
+          >
+            Todays Deals
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="contact-tab0"
+            data-mdb-toggle="tab"
+            data-mdb-target="#contact0"
+            type="button"
+            role="tab"
+            aria-controls="contact"
+            aria-selected="false"
+          >
+            Best Sellers
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="contact-tab0"
+            data-mdb-toggle="tab"
+            data-mdb-target="#contact0"
+            type="button"
+            role="tab"
+            aria-controls="contact"
+            aria-selected="false"
+          >
+            Mobiles
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="contact-tab0"
+            data-mdb-toggle="tab"
+            data-mdb-target="#contact0"
+            type="button"
+            role="tab"
+            aria-controls="contact"
+            aria-selected="false"
+          >
+            New Releases
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="contact-tab0"
+            data-mdb-toggle="tab"
+            data-mdb-target="#contact0"
+            type="button"
+            role="tab"
+            aria-controls="contact"
+            aria-selected="false"
+          >
+            CustomerService
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="contact-tab0"
+            data-mdb-toggle="tab"
+            data-mdb-target="#contact0"
+            type="button"
+            role="tab"
+            aria-controls="contact"
+            aria-selected="false"
+          >
+            Prime
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent0">
+        <div
+          class="tab-pane fade show active"
+          id="home0"
+          role="tabpanel"
+          aria-labelledby="home-tab0"
+        >
+         <div> <img src="images/banner1.jpg" style="width: 100%; height: 200px">
+         </div>
+         <div class="container" style="width: 100%;">
+          <div class="row ">
+            <div class="col-md-4 fw-bold p-0 m-0 text-center card">
+              <div class="card-body">
+            Home & Appliances
+              <div class="row p-0 m-0 " >
+                <div class="col-6"><img src="images/ac.jpg" class="items-img"><label style=" padding: 0px;font-size: 10px;">Air conditioners</label> </div>
+                <div class="col-6"><img src="images/fridge.jpg" class="items-img"><label style=" padding: 0px;font-size: 10px;">fridge</label> </div>
+
+              </div>
+              <div class="row p-0 m-0">
+                <div class="col-6"><img src="images/washinmachin.jpg" class="items-img"><label style=" padding: 0px;font-size: 10px;">Washing Machine</label> </div>
+                <div class="col-6"><img src="images/oven.jpg" class="items-img"><label style=" padding: 0px;font-size: 10px;">Oven</label> </div>
+              
+              </div>
+              <a style=" padding: 0px;font-size: 12px;"></label>see more</a>
+            </div>
+          </div>
+            <div class="col-md-4 fw-bold p-0 m-0 text-center card">
+              <div class="card-body">
+             Travel Tickets
+              <div class="row">
+                <div class="col-6"><img src="images/travel1.jpg"class="items-img"></div>
+                <div class="col-6"><img src="images/travel3.jpg"class="items-img"></div>
+
+              </div>
+              <div class="row">
+                <div class="col-6"><img src="images/travel4.jpg"class="items-img"></div>
+                <div class="col-6"><img src="images/ac.jpg"class="items-img"></div>
+              
+              </div>
+              <a style=" padding: 0px;font-size: 12px;"></label>see offers</a>
+             </div>
+            </div>
+            <div class="col-md-2">
+            <div class="card">
+              <div class="card-header fw-bold p-0 m-0">Upto 50% off Monitor blood sugar</div>
+              <div class="card-body p-0 m-0">
+                <img src="images/ad1.jpg"  style=" display:block;object-fit:  contain;width: 80px;height: 100px;">
+              </div>
+              <a style=" padding: 0px;font-size: 12px;">Visit the store</a>
+            </div>
+            </div>
+            <div class="col-md-2 text-center fw-bold">
+              Sign In for your best experience
+              <button class="bg-warning rounded text-white">Sign in Securely</button>
+              <img src="images/ad2.jpg" style="width: 150px; height: 50%;">
+            </div>
+            
+          </div>
+        </div>
+        <div class="container" style="width: 100%;">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="card">
+                <div class="card-header fw-bold p-0 m-0">Upto 70% off clearance store</div>
+                <div class="card-body p-0 m-0">
+                  <img src="images/ad1.jpg"  style=" display:block;object-fit:  contain;width: 80px;height: 100px;">
+                </div>
+                <a style=" padding: 0px;font-size: 12px;">Visit the store</a>
+              </div>
+              </div>
+            <div class="col-md-4 fw-bold p-0 m-0 text-center card">
+              <div class="card-body">
+            Revamp your Home in style
+              <div class="row p-0 m-0  " >
+                <div class="col-6"><img src="images/home1.jpg" class="items-img"><label style=" padding: 0px;font-size: 10px;">Air conditioners</label> </div>
+                <div class="col-6"><img src="images/home2.jpg" class="items-img"><label style=" padding: 0px;font-size: 10px;">fridge</label> </div>
+
+              </div>
+              <div class="row p-0 m-0">
+                <div class="col-6"><img src="images/home3.jpg" class="items-img"><label style=" padding: 0px;font-size: 10px;">Washing Machine</label> </div>
+                <div class="col-6"><img src="images/washinmachin.jpg" class="items-img"><label style=" padding: 0px;font-size: 10px;">Oven</label> </div>
+              
+              </div>
+              <a style=" padding: 0px;font-size: 12px;"></label>see more</a>
+            </div>
+          </div>
+            <div class="col-md-4 fw-bold p-0 m-0 text-center card">
+              <div class="card-body">
+            Automative Essentials upto 60% off
+              <div class="row">
+                <div class="col-6"><img src="images/70offer.jpg"class="items-img"></div>
+                <div class="col-6"><img src="images/auto2.jpg"class="items-img"></div>
+
+              </div>
+              <div class="row">
+                <div class="col-6"><img src="images/ac.jpg"class="items-img"></div>
+                <div class="col-6"><img src="images/ac.jpg"class="items-img"></div>
+              
+              </div>
+              <a style=" padding: 0px;font-size: 12px;"></label>see offers</a>
+            </div>
+            </div>
+            
+            <div class="col-md-2">
+              <div class="card">
+                <div class="card-header fw-bold p-0 m-0">Upto 50% off Monitor blood sugar</div>
+                <div class="card-body p-0 m-0">
+                  <img src="images/ad1.jpg"  style=" display:block;object-fit:  contain;width: 80px;height: 100px;">
+                </div>
+                <a style=" padding: 0px;font-size: 12px;">Visit the store</a>
+              </div>
+              </div>
+          </div>
+        </div>
+        </div>
+        <div class="tab-pane fade" id="profile0" role="tabpanel" aria-labelledby="profile-tab0">
+          Tab 2 content
+        </div>
+        <div class="tab-pane fade" id="contact0" role="tabpanel" aria-labelledby="contact-tab0">
+          Tab 3 content
+        </div>
+      </div>
+<!-- Tabs content -->
+<!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example21" class="form-control" />
+              <label class="form-label" for="form5Example21">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+        eum harum corrupti dicta, aliquam sequi voluptate quas.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Link 1</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 2</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 3</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://amazon.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+ <!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
+></script>   
+</body>
+</html>

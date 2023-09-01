@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .bg{
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+    height: fit-content;
+    background-color: brown;
+    padding: 30px;
+
+    }
+    input{
+        padding: 2px;
+        margin: 1px;
+    }
+</style>
+<body>
+        <div class="bg">
+        <div><label style="color: wheat;">Username:</label><input type="text" id="username" ></div>
+        <div><label style="color: wheat;">Password:</label><input type="number" id="password" ></div>
+        <div><Button style="background-color: white;color: green;" id="otp" onclick="sendOtp()">Send Otp</Button></div>
+        </div>
+   
+    <script>
+       function sendOtp()
+        {
+            
+               var result=Math.random()*(9999-1000)+1000;
+               var otp=Math.floor(result);
+               console.log(otp);
+
+            
+
+        }
+
+    </script>
+    
+</body>
+</html>

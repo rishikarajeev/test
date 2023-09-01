@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    //encapsulation with getter and setter classes set name and mark and get values from that and if age is greatter than 100 set alert
+    class Student{
+        constructor(){
+            var name;
+            var mark;
+        }
+        getName()
+        {  return this.name;                      
+
+        }
+        setName(name)
+        {
+
+            this.name=name;
+        }
+        getMark()
+        {
+            return this.mark;
+        }
+        setMark(mark)
+        {
+            if(mark<0 || mark>100)
+                {
+                    alert("mark shud be less than 100");
+                }
+                else{
+                    this.mark=mark;
+                }
+        }
+        
+
+    }
+  
+      var s=new Student();
+        s.setName("Rishika")
+        s.setMark(90);
+        document.write(s.getName()+""+s.getMark());
+
+    
+
+
+</script>
+
+
+    
+</body>
+</html>

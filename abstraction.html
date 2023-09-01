@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var vehicleName;
+        //creating a constructor function
+        function Vehicle()
+        {
+            this.vehicleName="vehicleName";
+            throw new Error("You cannot create instance of abstract class");
+
+            
+        }
+        Vehicle.prototype.display=function()
+        {
+            return "vehicle is"+this.vehicleName;
+
+        }
+        function Bike(vehicleName)
+        {this.vehicleName=vehicleName
+        return vehicleName;
+
+        }
+        Bike.prototype=Object.create(Vehicle.prototype);
+        var Bike=new Bike("Honda");
+        document.write(Bike.display())
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        border: green solid;  
+        width: 40%;  
+        margin: auto;
+        text-align: center;
+    }
+    #cal{
+    text-align: center;
+    width: 100%;
+
+
+
+    }
+
+</style>
+<body>
+    <div id="cal">
+        <div class="box" style="height: 100px;">
+            <h2 style="color: green;">Maitexa</h2>
+            <h2>Word and Character Count</h2>
+
+        </div>
+        <div  class="box" style="height: 200px;">
+            <input onkeyup="enter()" id="textEntered" placeholder="Enter text here.." type="text" style="height: 100%;width:100%;">
+
+        </div>
+        <div class="box" style="height: 100px;">
+            <label  id="words" style="color: green;"> 0</label>
+            <label  style="color: green;"> Words</label>
+            <label  id="characters" style="color: green;"> 0</label>
+            <label style="color: green;"> Characters
+
+
+        </div>
+    </div>
+    <script>
+        function enter()
+        {
+        var textEntered=document.getElementById("textEntered");
+        var textlength=textEntered.value;
+        var characters=document.getElementById("characters");
+        characters.innerHTML=textlength.length;
+        var words=document.getElementById("words");
+        words.innerHTML=WordCount(textlength);
+        }
+        function WordCount(str) { 
+        return str.split(" ").length;
+        }
+        
+
+      
+
+    </script>
+</body>
+</html>
